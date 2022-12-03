@@ -5,7 +5,7 @@ def jsonParse(def json) {
 pipeline {
     agent any
     environment {
-        NEXUS_CREDENTIALS=credentials('nexus-connect-lab-mod4')
+        NEXUS_CREDENTIALS=credentials('nexusid')
     }
     stages {
         stage("Step 1: Compile Code"){
@@ -37,7 +37,7 @@ pipeline {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
                     // Run Maven on a Unix agent to execute Sonar.
-                    sh './mvnw clean verify sonar:sonar -Dsonar.projectKey=project-laboratorio-mod4 -Dsonar.projectName=project-laboratorio-mod4'
+                    sh './mvnw clean verify sonar:sonar -Dsonar.projectKey=custom-project-key -Dsonar.projectName=project-laboratorio-mod4'
                 }
             }
         }
@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script{
                     nexusPublisher nexusInstanceId: 'nexus',
-                        nexusRepositoryId: 'repository-lab-mod4',
+                        nexusRepositoryId: 'repository-lab4',
                         packages: [
                             [$class: 'MavenPackage',
                                 mavenAssetList: [
@@ -68,7 +68,10 @@ pipeline {
         stage("Step 6: Download from Nexus"){
             steps {
                 script{
-                    sh 'curl -X GET -u ${NEXUS_CREDENTIALS} "http://nexus:8081/repository/repository-lab-mod4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
+                    withCredentials([usernamePassword(credentialsId: 'nexusid', passwordVariable: 'NXS_PASSWORD', usernameVariable: 'NXS_USERNAME')]) {
+                    sh ' curl -X GET -u $NXS_USERNAME:$NXS_PASSWORD "http://nexus:8081/repository/repository-lab-mod4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
+                }
+                    // sh 'curl -X GET -u ${NEXUS_CREDENTIALS} "http://nexus:8081/repository/repository-lab-mod4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
                 }
             }
         }
