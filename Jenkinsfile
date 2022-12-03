@@ -4,35 +4,35 @@ def jsonParse(def json) {
 }
 pipeline {
     agent any
-    environment {
-        NEXUS_CREDENTIALS=credentials('nexus-connect-lab-mod4')
-    }
     stages {
-        stage("Step 1: Compile Code"){
+        stage("Paso 1: Compiliar"){
             steps {
                 script {
-                sh "echo 'Compile Code'"
+                sh "echo 'Compile Code!'"
+                // Run Maven on a Unix agent.
                 sh "./mvnw clean compile -e"
                 }
             }
         }
-        stage("Step 2: Testing"){
+        stage("Paso 2: Testear"){
             steps {
                 script {
                 sh "echo 'Test Code!'"
+                // Run Maven on a Unix agent.
                 sh "./mvnw clean test -e"
                 }
             }
         }
-        stage("Step 3: Build .Jar"){
+        stage("Paso 3: Build .Jar"){
             steps {
                 script {
                 sh "echo 'Build .Jar!'"
+                // Run Maven on a Unix agent.
                 sh "./mvnw clean package -e"
                 }
             }
         }
-        stage("Step 4: SonarQube Analysis"){
+        stage("Paso 4: Análisis SonarQube"){
             steps {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
@@ -41,52 +41,25 @@ pipeline {
                 }
             }
         }
-        stage("Step 5: Upload Artifact to Nexus"){
+        stage("Paso 4: Run .Jar"){
             steps {
-                script{
-                    nexusPublisher nexusInstanceId: 'nexus',
-                        nexusRepositoryId: 'repository-lab-mod4',
-                        packages: [
-                            [$class: 'MavenPackage',
-                                mavenAssetList: [
-                                    [classifier: '',
-                                    extension: 'jar',
-                                    filePath: 'build/DevOpsUsach2020-0.0.1.jar'
-                                ]
-                            ],
-                                mavenCoordinate: [
-                                    artifactId: 'DevOpsUsach2020',
-                                    groupId: 'com.devopsusach2020',
-                                    packaging: 'jar',
-                                    version: '0.0.1'
-                                ]
-                            ]
-                        ]
+                script {
+                sh "echo 'Run .Jar!'"
+                // Run SpringBoot on a Unix agent.
+                sh "nohup bash mvnw spring-boot:run &"
                 }
             }
         }
-        stage("Step 6: Download from Nexus"){
-            steps {
-                script{
-                    sh 'curl -X GET -u ${NEXUS_CREDENTIALS} "http://nexus:8081/repository/repository-lab-mod4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
+        stage("Paso 5: Test App"){
+                steps {
+                    script {
+                    sh "echo 'Test App!'"
+                    // Run SpringBoot on a Unix agent.
+                    sh "curl -X GET 'http://localhost:8080/rest/mscovid/test?msg=testing'"
+                    }
                 }
             }
-        }
-         stage("Step 7: Raise Artifact Jar on Jenkins server"){
-            steps {
-                script{
-                    sh 'nohup java -jar DevOpsUsach2020-0.0.1.jar & >/dev/null'
-                }
-            }
-        }
-          stage("Step 8: Test Artifact - Sleep(Wait 20s)"){
-            steps {
-                script{
-                    sh "sleep 20 && curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
-                }
-            }
-        }
-    }
+        } 
     post {
         always {
             sh "echo 'fase always executed post'"
