@@ -5,8 +5,8 @@ def jsonParse(def json) {
 pipeline {
     agent any
     environment {
-        NEXUS_CREDENTIALS=credentials('nexus-connect-lab-mod4')
-        channel='C04B17VE0JH'
+        NEXUS_CREDENTIALS=credentials('nexusid')
+        channel='C04BPL2A5E3'
     }
     stages {
         stage("Step 1: Compile Code"){
@@ -68,7 +68,7 @@ pipeline {
                     withSonarQubeEnv('sonarqube') {
                         sh "echo 'Calling sonar Service in another docker container!'"
                         // Run Maven on a Unix agent to execute Sonar.
-                        sh './mvnw clean verify sonar:sonar -Dsonar.projectKey=project-laboratorio-mod4 -Dsonar.projectName=project-laboratorio-mod4'
+                        sh './mvnw clean verify sonar:sonar -Dsonar.projectKey=custom-project-key -Dsonar.projectName=project-lab4'
                     }
                 }    
             }
@@ -86,7 +86,7 @@ pipeline {
                 script{
                     env.STAGE='UploadNexus'
                     nexusPublisher nexusInstanceId: 'nexus',
-                        nexusRepositoryId: 'repository-lab-mod4',
+                        nexusRepositoryId: 'repository-lab4',
                         packages: [
                             [$class: 'MavenPackage',
                                 mavenAssetList: [
@@ -118,7 +118,7 @@ pipeline {
             steps {
                 script{
                     env.STAGE='DownloadNexus'
-                    sh 'curl -X GET -u ${NEXUS_CREDENTIALS} "http://nexus:8081/repository/repository-lab-mod4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
+                    sh 'curl -X GET -u ${NEXUS_CREDENTIALS} "http://nexus:8081/repository/repository-lab4/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar" -O'
                 }
             }
             post{
