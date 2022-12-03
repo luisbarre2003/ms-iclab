@@ -20,10 +20,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -37,10 +37,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -54,10 +54,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -74,10 +74,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -107,10 +107,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -123,10 +123,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -139,10 +139,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
@@ -155,10 +155,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'e48c52d4-7f34-40b3-b761-2ec09a9d0a76'
 				}
 			}
         }
