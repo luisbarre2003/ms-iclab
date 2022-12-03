@@ -6,7 +6,7 @@ pipeline {
     agent any
     environment {
         NEXUS_CREDENTIALS=credentials('nexusid')
-        channel='C04BPL2A5E3'
+        channel='D044YF05G6A'
     }
     stages {
         stage("Step 1: Compile Code"){
