@@ -20,10 +20,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -37,10 +37,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -54,10 +54,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -74,10 +74,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -107,10 +107,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -123,10 +123,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -139,10 +139,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
@@ -155,10 +155,10 @@ pipeline {
             }
             post{
 				success{
-					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'good', message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Éxito/Success].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 				failure{
-					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'token-slack-lab-mod4'
+					slackSend color: 'danger',  message: "[${env.GROUP}][Pipeline IC/CD][Rama: ${BRANCH_NAME}][Stage: ${env.STAGE}][Resultado: Error/Fail].", teamDomain: 'devopsusach20-lzc3526', tokenCredentialId: 'Token-Slack'
 				}
 			}
         }
