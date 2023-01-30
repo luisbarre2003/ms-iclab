@@ -1,5 +1,3 @@
-106 lines (88 sloc)  3.35 KB
-
 package com.devopsusach2020.rest;
 
 import java.time.Duration;
